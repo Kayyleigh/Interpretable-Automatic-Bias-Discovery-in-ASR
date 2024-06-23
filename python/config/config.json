@@ -1,0 +1,37 @@
+{
+  "feature_extraction": {
+    "base_path": "..\\extracted_features",
+    "data_sources": [
+      {
+        "speaking_style": "Rd",
+        "file_name": "extraction_read_15062024.csv"
+      },
+      {
+        "speaking_style": "HMI",
+        "file_name": "extraction_hmi_15062024.csv"
+      }
+    ]
+  },
+  "asr_performance": {
+    "base_path": "..\\asr_output\\asr_output",
+    "asr_models": ["NoAug", "SpAug", "SpSpecAug", "Whisper", "FT-Wpr"],
+    "speaker_groups": ["DC", "DT", "NnT", "NnA", "DOA"],
+    "base_metrics": ["WER"],
+    "path_templates": {
+        "error_rate_file": "{base_path}\\{asr_model}\\{speaking_style}\\{speaker_group}_{speaking_style}_output.csv",
+        "meta_file": "{base_path}\\Meta\\{speaking_style}\\{speaking_style}_meta.csv"
+    }
+  },
+  "speaking_styles": [
+    {
+      "id": "Rd",
+      "name": "Read",
+      "abbreviation": "Rd"
+    },
+    {
+      "id": "HMI",
+      "name": "Human-Machine Interaction",
+      "abbreviation": "HMI"
+    }
+  ]
+}
