@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains the codebase for my BSc thesis titled "Discovering Bias in Dutch Automatic Speech Recognition by Clustering Interpretable Acoustic and Prosodic Features" for the Research Project (CSE3000) at the Delft University of Technology. The project proposes an interpretable approach to bias discovery by clustering speakers based on acoustic and prosodic features.
+This repository contains the codebase for my BSc thesis titled "Discovering Bias in Dutch Automatic Speech Recognition by Clustering Interpretable Acoustic and Prosodic Features" for the [Research Project](https://github.com/TU-Delft-CSE/Research-Project) 2024 at the [TU Delft](https://github.com/TU-Delft-CSE). The project proposes an interpretable approach to bias discovery by clustering speakers based on acoustic and prosodic features.
 
 ## Usage
 The repository consists of multiple components:
